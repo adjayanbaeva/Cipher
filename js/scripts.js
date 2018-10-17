@@ -38,10 +38,16 @@ var forthFunction = function(){
   var concatLetterToThirdFunction = outputLetterAtIndex.concat(thirdFunction());
   
   return concatLetterToThirdFunction;
-
-  
 }
 console.log(forthFunction());
+
+//The last function will reverse the final result.
+var lastFunction = function(){
+  var splitFinalSentence = forthFunction().split("");
+  var reverseFinalSentence = splitFinalSentence.reverse().join("");
+  return reverseFinalSentence;
+}
+console.log(lastFunction())
 
 
 
