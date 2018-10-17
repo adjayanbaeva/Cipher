@@ -47,7 +47,19 @@ var lastFunction = function(){
   var reverseFinalSentence = splitFinalSentence.reverse().join("");
   return reverseFinalSentence;
 }
-console.log(lastFunction())
+console.log(lastFunction());
+
+
+
+//FRONT-END LOGIC
+$(document).ready(function(){
+  $("#roses").click(function(){
+    alert(sentence);
+  })
+  $("#peony").click(function(){
+    alert(forthFunction());
+  })
+})
 
 
 
