@@ -20,7 +20,6 @@ var secondFunction = function(){
   var reversedLetters = splitLetters.reverse().join('');
   return reversedLetters;
 }
-
 console.log(secondFunction());
 
 
@@ -29,5 +28,20 @@ var thirdFunction = function(){
   sentenceAndReversedLetters=sentence.concat(secondFunction());
   return sentenceAndReversedLetters;
 }
-
 console.log(thirdFunction());
+
+//Forth function will count the number of letters in the original sentence, divide it by two(rounding down if necessary) and output the letter at this index. Concatinate this letter at the beginning of the original sentence.
+var forthFunction = function(){
+  var numbersInSentence = sentence.length;
+  var divideByTwo = Math.floor(numbersInSentence/2);
+  var outputLetterAtIndex = sentence.charAt(divideByTwo);
+  var concatLetterToThirdFunction = outputLetterAtIndex.concat(thirdFunction());
+  
+  return concatLetterToThirdFunction;
+
+  
+}
+console.log(forthFunction());
+
+
+
