@@ -22,3 +22,12 @@ var secondFunction = function(){
 }
 
 console.log(secondFunction());
+
+
+//Third function will concatinate the result from the second function to the original sentence.
+var thirdFunction = function(){
+  sentenceAndReversedLetters=sentence.concat(secondFunction());
+  return sentenceAndReversedLetters;
+}
+
+console.log(thirdFunction());
