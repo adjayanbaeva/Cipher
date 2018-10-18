@@ -9,12 +9,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>Cipher</h1>
-      <img id="roses" src="img/roses.jpg" alt="Roses">
-      <img id="peony" src="img/peony.jpg" alt="Peony">
+      <div class="jumbotron">
+        <h1>Cipher</h1>
+        
+      </div>
+      <div class="well">
+        <p>Please select any of the 2 images below.</p>
+        <p><strong>Roses</strong> will show your originally entered answer, and Peony will show modified answer.</p>
+        <p><strong>Peony</strong> will return encoded result</p>
+        
+      </div>
       
+      
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <p class="panel-title">The sentence been encoded in the following way:</p>
+        </div>
+         <div class="panel-body">
+           <ol>
+            <li>will take the first and the last letter of your sentence and capitalize it</li>
+            <li>will reverse these letters</li>
+            <li>will concatenate the new two-letter string together with the original phrase</li>
+            <li>will count the number of letters in the original sentence, divide it by two (rounding down if necessary), and output the letter at this index. Concatenate this letter at the beginning of the original sentence. </li>
+            <li>will reverse the final result</li>
+           </ol>
+         </div>
+       </div>
+      
+      <div class="row">
+        <img id="roses" src="img/roses.jpg" alt="Roses">
+        <img id="peony" src="img/peony.jpg" alt="Peony">
+      </div>
     </div>
-
-    
-  </body>
+</body>
 </html>
